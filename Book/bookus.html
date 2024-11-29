@@ -389,9 +389,17 @@
                 alert('Failed to append to the spreadsheet. Please try again.');
             }
         }
-    
+        
         document.getElementById('booking-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
+        
+            // Check if gapi is initialized
+            if (!gapiInitialized) {
+                alert('Google API client is not initialized. Please try again later.');
+                return;
+            }
+        
+            // Check if the token is available
             if (gapi.client.getToken() === null) {
                 tokenClient.requestAccessToken({ prompt: 'consent' });
             } else {
