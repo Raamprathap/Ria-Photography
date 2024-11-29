@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ria Photography</title>
     <link rel="stylesheet" href="bookus.css">
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </head>
 <body>
     <nav>
@@ -29,53 +31,60 @@
             </button>
         </ol>
     </nav>
+    <div class="booking">
+        <div class="content">
+            <h2>Capture Your Moments</h2>
+            <h2 style="color: #00aeff;">with Ria Photography!</h2>
+        </div>
+        <section class="booking-section">
+            <form id="booking-form">
+                <div class="form">
+                    <div class="left">
+                        <label for="couple-name">Couple Name *</label>
+                        <input type="text" id="couple-name" name="couple-name" required>
 
-    <!-- Booking Section Start -->
-    <section class="booking-section">
-        <img src="image/img1.jpg" alt="Booking Image" class="booking-image">
-        <form id="booking-form">
-            <h2>Book Your Shoot</h2>
-            <label for="couple-name">Couple Name *</label>
-            <input type="text" id="couple-name" name="couple-name" required>
+                        <label for="email">Your email-id *</label>
+                        <input type="email" id="email" name="email" required>
 
-            <label for="email">Your email-id *</label>
-            <input type="email" id="email" name="email" required>
+                        <label for="contact">Your Contact no *</label>
+                        <input type="tel" id="contact" name="contact" pattern="[0-9()+\- ]*" required title="Please enter a valid phone number">
 
-            <label for="contact">Your Contact no *</label>
-            <input type="tel" id="contact" name="contact" pattern="[\d()+\- ]*" required title="Please enter a valid phone number"><input type="tel" id="contact" name="contact" pattern="[\d()+\- ]*" required title="Please enter a valid phone number">
+                        <label for="shoot-date">Main Shoot Date *</label>
+                        <input type="date" id="shoot-date" name="shoot-date" required>
+                    </div>
+                    <div class="right">
+                        <label for="shoot-type">Type of Shoot</label>
+                        <select id="shoot-type" name="shoot-type" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="pre-wedding">Pre-Wedding</option>
+                            <option value="post-wedding">Post-Wedding</option>
+                            <option value="event">Event</option>
+                            <option value="other">Other</option>
+                        </select>
 
-            <label for="shoot-date">Main Shoot Date *</label>
-            <input type="date" id="shoot-date" name="shoot-date" required>
+                        <label for="shoot-location">Shoot Location</label>
+                        <input type="text" id="shoot-location" name="shoot-location">
 
-            <label for="shoot-type">Type of Shoot</label>
-            <select id="shoot-type" name="shoot-type" required>
-                <option value="" disabled selected>Choose an option</option>
-                <option value="wedding">Wedding</option>
-                <option value="pre-wedding">Pre-Wedding</option>
-                <option value="post-wedding">Post-Wedding</option>
-                <option value="event">Event</option>
-                <option value="other">Other</option>
-            </select>
+                        <label for="referral">How did you hear about us? *</label>
+                        <select id="referral" name="referral" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="friends">At friends or relatives Wedding</option>
+                            <option value="other">Others</option>
+                        </select>
 
-            <label for="shoot-location">Shoot Location</label>
-            <input type="text" id="shoot-location" name="shoot-location">
-
-            <label for="referral">How did you hear about us? *</label>
-            <select id="referral" name="referral" required>
-                <option value="" disabled selected>Choose an option</option>
-                <option value="facebook">Facebook</option>
-                <option value="instagram">Instagram</option>
-                <option value="friends">At friends or relatives Wedding</option>
-                <option value="other">Others</option>
-            </select>
-
-            <label for="details">Any additional details:</label>
-            <textarea id="details" name="details" placeholder="No.of.guests,Flow of events etc..."></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <!-- Booking Section End -->
+                        <label for="details">Any additional details:</label>
+                        <textarea id="details" name="details" placeholder="No.of.guests,Flow of events etc..."></textarea>
+                    </div>
+                </div>
+                <div class="Submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
 
     <div class="footer">
         <p class="footer-text">© Ria Photography 2024, Coimbatore, India<br>
@@ -318,24 +327,76 @@
         const yyyy = today.getFullYear();
         const minDate = yyyy + '-' + mm + '-' + dd;
         document.getElementById('shoot-date').setAttribute('min', minDate);
-
+    
+        let tokenClient;
+        let gapiInitialized = false;
+        let gisInitialized = false;
+    
+        function gapiLoaded() {
+            gapi.load('client', initializeGapiClient);
+        }
+    
+        async function initializeGapiClient() {
+            await gapi.client.init({
+                discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+            });
+            gapiInitialized = true;
+        }
+    
+        function gisLoaded() {
+            tokenClient = google.accounts.oauth2.initTokenClient({
+                client_id: '842336349829-jiu3lsov70mc63njgdfdks0difdc9lu1.apps.googleusercontent.com',
+                scope: 'https://www.googleapis.com/auth/spreadsheets',
+                callback: (resp) => {
+                    if (resp.error) {
+                        console.error('Error:', resp.error);
+                        alert('Failed to authenticate. Please try again.');
+                        return;
+                    }
+                    appendToSpreadsheet();
+                },
+            });
+            gisInitialized = true;
+        }
+    
+        async function appendToSpreadsheet() {
+            const spreadsheetId = '1KDygHMDaGu3ejSWdxB-mcpJc6eW6A2ZslDLXdurumno';
+            const range = 'Sheet1!A1'; // This can be any cell, it will append to the next available row
+            const valueInputOption = 'USER_ENTERED';
+    
+            const coupleName = document.getElementById('couple-name').value;
+            const email = document.getElementById('email').value;
+            const contact = document.getElementById('contact').value;
+            const shootDate = document.getElementById('shoot-date').value;
+            const shootType = document.getElementById('shoot-type').value;
+            const shootLocation = document.getElementById('shoot-location').value;
+    
+            const values = [[coupleName, email, contact, shootDate, shootType, shootLocation]];
+    
+            const body = { values: values };
+    
+            try {
+                const response = await gapi.client.sheets.spreadsheets.values.append({
+                    spreadsheetId: spreadsheetId,
+                    range: range,
+                    valueInputOption: valueInputOption,
+                    resource: body
+                });
+                console.log(`${response.result.updates.updatedCells} cells appended.`);
+                alert(`${response.result.updates.updatedCells} cells appended successfully!`);
+            } catch (error) {
+                console.error('Error appending to spreadsheet:', error);
+                alert('Failed to append to the spreadsheet. Please try again.');
+            }
+        }
+    
         document.getElementById('booking-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-
-            // Collect form data
-            const formData = new FormData(this);
-
-            // Here you would typically send the data to your server
-            // For example, using fetch or XMLHttpRequest
-            // fetch('/your-server-endpoint', {
-            //     method: 'POST',
-            //     body: formData
-            // })
-            // .then(response => response.json())
-            // .then(data => console.log(data))
-            // .catch(error => console.error('Error:', error));
-
-            alert('Form submitted!'); // Placeholder for form submission
+            if (gapi.client.getToken() === null) {
+                tokenClient.requestAccessToken({ prompt: 'consent' });
+            } else {
+                appendToSpreadsheet(); // Call to append data directly if already authenticated
+            }
         });
     </script>
 </body>
