@@ -383,6 +383,7 @@
                     resource: body
                 });
                 console.log(`${response.result.updates.updatedCells} cells appended.`);
+                document.getElementById('booking-form').reset();
             } catch (error) {
                 console.error('Error appending to spreadsheet:', error);
                 alert('Failed to append to the spreadsheet. Please try again.');
