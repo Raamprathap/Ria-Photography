@@ -13,7 +13,11 @@ body{
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background-color: #f9ecec;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
 }
 
 nav{
@@ -253,27 +257,57 @@ nav{
     fill: #1f2937;
 }
 
+.booking{
+    display: flex;
+    gap: 10vh;
+}
+
+.content{
+    width: 94vh;
+}
+
+.content h2{
+    position: relative;
+    top: 40%;
+    left: 20vh;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #55c9fe;
+    font-weight: lighter;
+    line-height: 5vh;
+    margin-bottom: 1vh;
+}
+
 .booking-section {
-    margin: 80px 5%;
+    position: relative;
+    top: 3vh;
+    max-height: 100vh;
+    max-width: 94vh;
+    margin: 80px 0;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 90%;
+    align-items: auto;
 }
 
-.booking-image {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+#booking-form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
 
-.booking-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+.form{
+    display: flex;
+    gap: 3vh;
+}
+
+.Submit{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
 }
 
 .booking-section label {
@@ -286,11 +320,12 @@ nav{
 .booking-section input,
 .booking-section select,
 .booking-section textarea {
-    width: 100%;
+    width: 40vh;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
     transition: border-color 0.3s;
 }
 
@@ -330,7 +365,7 @@ nav{
 
 .footer{
     height: 300px;
-    width: 100%;
+    width: 200vh;
     display: flex;
     background-color: #f4f4f4;
     gap: 500px;
