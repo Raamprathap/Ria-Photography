@@ -1081,3 +1081,51 @@ button:disabled {
         font-size: 1.5rem;
     }
 }
+
+/* Dropdown Menu for Mobile Devices */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        height: auto;
+    }
+    .menu {
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+    .menu li {
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+    .menu li:hover {
+        background-color: #f0f0f0;
+    }
+    .menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .menu-button:focus + .menu, .menu-button:hover + .menu {
+        display: flex; /* Show the menu when the button is clicked or hovered */
+    }
+}
