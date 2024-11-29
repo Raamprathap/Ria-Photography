@@ -331,16 +331,18 @@
         let tokenClient;
         let gapiInitialized = false;
         let gisInitialized = false;
-    
         function gapiLoaded() {
+            console.log("gapiLoaded called");
             gapi.load('client', initializeGapiClient);
         }
-    
+        
         async function initializeGapiClient() {
+            console.log("Initializing GAPI Client");
             await gapi.client.init({
                 discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
             });
             gapiInitialized = true;
+            console.log("GAPI Client initialized");
         }
     
         function gisLoaded() {
