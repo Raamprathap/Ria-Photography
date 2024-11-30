@@ -1100,7 +1100,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
-        gap: 30px;
+        gap: 80px;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -1109,12 +1109,11 @@ button:disabled {
     .menu {
         display: none; /* Hide the menu in mobile */
     }
-
     .nav-dropdown {
         display: block; /* Show dropdown in mobile */
     }
     .albums{
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 50px;
     }
