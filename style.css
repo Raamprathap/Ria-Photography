@@ -1115,3 +1115,15 @@ button:disabled {
         font-size: 1.5rem;
     }
 }
+.nav-dropdown {
+    display: none; /* Hidden by default */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-dropdown {
+        display: block; /* Show dropdown in mobile */
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+}
