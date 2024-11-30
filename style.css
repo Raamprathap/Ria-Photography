@@ -1129,3 +1129,31 @@ button:disabled {
         margin: 0 auto;
     }
 }
+
+
+/* Further adjustments for mobile views */
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: row; /* Maintain horizontal layout */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .service {
+        width: 45%; /* Adjust width for horizontal alignment */
+    }
+
+    .about-us,
+    .gallery,
+    .wedding-gallery {
+        width: 100%; /* Ensure consistent width */
+        max-width: 100%; /* Match the width of the wedding-gallery */
+        padding: 0 10px; /* Add padding for better appearance */
+    }
+
+    .about-us .conten,
+    .gallery p {
+        text-align: center;
+    }
+}
