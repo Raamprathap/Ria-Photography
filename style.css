@@ -1131,7 +1131,10 @@ button:disabled {
     .slider, .list{
         left: 0;
         font-size: .5rem;
-        line-height: unset !important;
+    }
+    .slider .list .item .content .title,
+    .slider .list .item .content .type{
+        line-height: unset;
     }
     .gallery, .about-us, .otservices, .footer{
         width: 120%; /* Set all sections to full width */
