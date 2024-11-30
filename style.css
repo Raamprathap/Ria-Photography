@@ -1082,7 +1082,10 @@ button:disabled {
         flex-wrap:wrap;
     }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
-        width: 100% !important; /* Set all sections to full width */
+        width: 100%; /* Set all sections to full width */
+    }
+    .slider, .albums, .about-us, .otservices, .footer{
+        width: 250% !important; /* Set all sections to full width */
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
