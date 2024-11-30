@@ -1079,7 +1079,7 @@ button:disabled {
         display: block; /* Show dropdown in mobile */
     }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
-        width: 100%; /* Set all sections to full width */
+        width: 100% !important; /* Set all sections to full width */
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
