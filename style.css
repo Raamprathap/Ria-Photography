@@ -1122,9 +1122,10 @@ button:disabled {
     }
     .slider, .item, .item img, .item .content{
         width: 100%; /* Set all sections to full width */
+        height: 300px;
     }
     .slider{
-        margin: 0;
+        margin-left: 0;
     }
     .gallery, .about-us, .otservices, .footer{
         width: 120%; /* Set all sections to full width */
