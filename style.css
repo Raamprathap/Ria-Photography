@@ -1091,7 +1091,7 @@ button:disabled {
         flex-direction: column; /* Change to column for mobile */
     }
     .album img {
-        width: 100%; /* Full width for mobile */
+        width: 120%; /* Full width for mobile */
         height: auto; /* Maintain aspect ratio */
     }
     .about-us, .otservices {
@@ -1099,8 +1099,6 @@ button:disabled {
     }
     .footer {
         display: flex;
-        flex-direction: column; /* Change to column for mobile */
-        gap: 0; /* Remove gap in mobile */
     }
     .slider .list .item .content .title {
         font-size: 2rem; /* Adjust font size */
