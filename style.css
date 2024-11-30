@@ -1065,7 +1065,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
-        gap: 800px;
+        gap: 850px;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -1098,9 +1098,6 @@ button:disabled {
         display: flex;
         flex-direction: column; /* Change to column for mobile */
         gap: 0; /* Remove gap in mobile */
-    }
-    .slider {
-        height: 300px; /* Adjust height for mobile */
     }
     .slider .list .item .content .title {
         font-size: 2rem; /* Adjust font size */
