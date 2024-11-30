@@ -1093,39 +1093,8 @@ button:disabled {
     .menu.active {
         display: flex; /* Show the menu when active */
     }
-}
 
-
-/* Adjustments for services and about-us sections */
-@media screen and (max-width: 768px) {
-    .services {
+    .services{
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .service {
-        width: 90%; /* Increase the width for better visibility */
-        margin: auto;
-    }
-
-    .about-us {
-        padding: 20px;
-    }
-
-    .about-us .conten {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about-us .conten h1 {
-        font-size: 2rem;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .about-us .conten p {
-        font-size: 1rem;
-        width: 100%;
-        margin: 0 auto;
     }
 }
