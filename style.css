@@ -1129,8 +1129,9 @@ button:disabled {
         height: 300px;
     }
     .slider, .list{
-        margin-left: 0;
+        left: 0;
         font-size: .5rem;
+        line-height: unset !important;
     }
     .gallery, .about-us, .otservices, .footer{
         width: 120%; /* Set all sections to full width */
