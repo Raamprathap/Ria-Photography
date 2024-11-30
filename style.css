@@ -1079,19 +1079,22 @@ button:disabled {
         display: block; /* Show dropdown in mobile */
     }
     .albums{
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
         width: 100%; /* Set all sections to full width */
     }
-    .slider, .gallery, .about-us, .otservices, .footer{
+    .slider{
         width: 300% !important; /* Set all sections to full width */
+    }
+    .gallery, .about-us, .otservices, .footer{
+        width: 320% !important; /* Set all sections to full width */
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
     }
     .album img {
-        width: 120%; /* Full width for mobile */
+        width: 100%; /* Full width for mobile */
         height: auto; /* Maintain aspect ratio */
     }
     .about-us, .otservices {
