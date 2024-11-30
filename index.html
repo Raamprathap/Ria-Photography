@@ -17,22 +17,25 @@
             </a>
         </div>
 
-        <button class="menu-button">
-            &#9776; <!-- This represents the hamburger icon -->
-        </button>
-
-        <div class="dropdown">
-            <button class="menu-button">
-                &#9776;
+        <ol class="menu">
+            <li style="--i:1" onclick="window.location.href='index.html'">Home</li>
+            <li style="--i:2" onclick="window.location.href='gallery/templates/gallery.html'">Gallery</li>
+            <li style="--i:3" onclick="window.location.href='Films/templates/video.html'">Films</li>
+            <li style="--i:4" onclick="window.location.href='About/About.html'">About</li>
+            <button type="submit" class="custom-button" style="--i:5" onclick="window.location.href='Book/bookus.html'">
+                Book Us
+                <svg
+                    class="custom-svg"
+                    viewBox="0 0 16 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                    class="custom-path"
+                    ></path>
+                </svg>
             </button>
-            <ol class="dropdown-menu">
-                <li onclick="window.location.href='index.html'">Home</li>
-                <li onclick="window.location.href='gallery.html'">Gallery</li>
-                <li onclick="window.location.href='video.html'">Films</li>
-                <li onclick="window.location.href='About.html'">About</li>
-                <li onclick="window.location.href='bookus.html'">Book Us</li>
-            </ol>
-        </div>
+        </ol>
     </nav>
 
     <div class="slider" style="--i:6">
@@ -40,7 +43,7 @@
         <div class="list">
 
             <div class="item">
-                <img src="./image/img1.jpg" alt="">
+                <img src="home_img/img1.jpg" alt="">
 
                 <div class="content">
                     <div class="title">Photo</div>
@@ -49,13 +52,13 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
                     </div>
                     <div class="button">
-                        <button onclick="window.location.href='gallery.html'">SEE MORE</button>
+                        <button onclick="window.location.href='gallery/templates/gallery.html'">SEE MORE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./image/img2.jpg" alt="">
+                <img src="home_img/img2.jpg" alt="">
 
                 <div class="content">
                     <div class="title">Photo</div>
@@ -64,13 +67,13 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
                     </div>
                     <div class="button">
-                        <button onclick="window.location.href='gallery.html'">SEE MORE</button>
+                        <button onclick="window.location.href='gallery/templates/gallery.html'">SEE MORE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./image/img4.jpg" alt="">
+                <img src="home_img/img4.jpg" alt="">
 
                 <div class="content">
                     <div class="title">Photo</div>
@@ -79,13 +82,13 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
                     </div>
                     <div class="button">
-                        <button onclick="window.location.href='gallery.html'">SEE MORE</button>
+                        <button onclick="window.location.href='gallery/templates/gallery.html'">SEE MORE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./image/img3.jpg" alt="">
+                <img src="home_img/img3.jpg" alt="">
 
                 <div class="content">
                     <div class="title">Photo</div>
@@ -94,7 +97,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
                     </div>
                     <div class="button">
-                        <button onclick="window.location.href='gallery.html'">SEE MORE</button>
+                        <button onclick="window.location.href='gallery/templates/gallery.html'">SEE MORE</button>
                     </div>
                 </div>
             </div>
@@ -105,46 +108,46 @@
 
     <div class="albums">
         <div class="album">
-            <img class="leftalb" src="./image/img1.jpg" style="--i:7" onclick="window.location.href='gallery.html'">
+            <img class="leftalb" src="home_img/img1.jpg" style="--i:7" onclick="window.location.href='gallery/templates/gallery.html'">
         </div>
         <div class="album">
-            <img src="./image/img2.jpg" style="--i:7" onclick="window.location.href='gallery.html'">
+            <img src="home_img/img2.jpg" style="--i:7" onclick="window.location.href='gallery/templates/gallery.html'">
         </div>
         <div class="album">
-            <img class="rightalb" src="./image/img3.jpg" style="--i:7" onclick="window.location.href='gallery.html'">
+            <img class="rightalb" src="home_img/img3.jpg" style="--i:7" onclick="window.location.href='gallery/templates/gallery.html'">
         </div>
     </div>
 
     <div class="gallery">
         <p>A picture is worth thousand words they say, but we feel wedding photographs are more than that. For the amount of love, joy, promise, dreams and memories they carry within, it is an endless journey of emotions that the couple gets to experience on the big day.we make sure not a moment is missed when you are in the flow of the occasion.</p>
-        <button onclick="window.location.href='gallery.html'">View Gallery</button>
+        <button onclick="window.location.href='gallery/templates/gallery.html'">View Gallery</button>
     </div>
 
     <div class="wedding-gallery">
         <div>
-            <video class="vid" src="C:\Users\raamp\Downloads\CB.SC.U4CSE23046-4.mp4" controls></video>
+            <video class="vid" src="Video/image/CB.SC.U4CSE23046-4.mp4" controls></video>
         </div>
         <div class="desc">
             <h1>Wedding Photography</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorem dicta facere hic architecto praesentium voluptate laboriosam ducimus fugiat? Sed sapiente quas corrupti amet voluptatum aliquam aperiam enim voluptate eius.</p>
-            <button onclick="window.location.href='video.html'">Watch Us</button>
+            <button onclick="window.location.href='Films/templates/video.html'">Watch Us</button>
         </div>
         
     </div>
 
     <div class="about-us">
         <div class="conten">
-            <h1>Why Ria Photography</h1>
+            <h1>Why Ria Photography?</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa accusamus, impedit est deserunt nisi quod placeat aut amet nemo dolore saepe assumenda sed, blanditiis eum explicabo eveniet perferendis ipsum!</p>
         </div>
         <div class="about-slide">
             <div class="img-slide">
                 <div class="images">
-                    <img src="image/slide1.png" alt="">
-                    <img src="image/slide2.png" alt="">
-                    <img src="image/slide3.png" alt="">
-                    <img src="image/slide4.png" alt="">
-                    <img src="image/slide5.png" alt="">
+                    <img src="home_img/slide1.png" alt="">
+                    <img src="home_img/slide2.png" alt="">
+                    <img src="home_img/slide3.png" alt="">
+                    <img src="home_img/slide4.png" alt="">
+                    <img src="home_img/slide5.png" alt="">
                 </div>
             </div>
         </div>
@@ -154,7 +157,7 @@
         <h1>Other Services</h1>
         <div class="services">
             <div class="service">
-                <img src="image/img1.jpg" alt="">
+                <img src="home_img/img1.jpg" alt="">
                 <div class="cont">
                     <h2>Commercial Photography</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae minima quis voluptatum numquam optio dolorum non dolores. Eligendi, a inventore. Iusto unde consectetur porro odio voluptatibus, cum est voluptatem sunt.</p>
@@ -162,7 +165,7 @@
                 </div>
             </div>
             <div class="service">
-                <img src="image/img1.jpg" alt="">
+                <img src="home_img/img1.jpg" alt="">
                 <div class="cont">
                     <h2>Kids Photography</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae minima quis voluptatum numquam optio dolorum non dolores. Eligendi, a inventore. Iusto unde consectetur porro odio voluptatibus, cum est voluptatem sunt.</p>
@@ -170,7 +173,7 @@
                 </div>
             </div>
             <div class="service">
-                <img src="image/img1.jpg" alt="">
+                <img src="home_img/img1.jpg" alt="">
                 <div class="cont">
                     <h2>Wedding Photography</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae minima quis voluptatum numquam optio dolorum non dolores. Eligendi, a inventore. Iusto unde consectetur porro odio voluptatibus, cum est voluptatem sunt.</p>
