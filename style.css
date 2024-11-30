@@ -1128,8 +1128,9 @@ button:disabled {
         width: 100%; /* Set all sections to full width */
         height: 300px;
     }
-    .slider{
+    .slider, .list{
         margin-left: 0;
+        font-size: .5rem;
     }
     .gallery, .about-us, .otservices, .footer{
         width: 120%; /* Set all sections to full width */
@@ -1148,7 +1149,7 @@ button:disabled {
         display: flex;
     }
     .slider .list .item .content .title {
-        font-size: 2rem; /* Adjust font size */
+        font-size: 1rem !important; /* Adjust font size */
     }
     .gallery p {
         font-size: 14px;
