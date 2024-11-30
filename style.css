@@ -1080,6 +1080,7 @@ button:disabled {
     }
     .albums{
         flex-wrap: wrap;
+        gap: 50px;
     }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
         width: 100%; /* Set all sections to full width */
