@@ -1039,58 +1039,45 @@ button:disabled {
         opacity: 1;
     }
 }
-
-
-/* Responsive styles for mobile devices */
+/* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
+        gap: 20px;
         flex-wrap: wrap;
-        justify-content: space-between;
-        height: auto;
-        padding: 10px;
     }
-
+    .logo-button {
+        width: 180px;
+    }
     .menu {
-        display: none; /* Hide the menu by default */
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
+        gap: 20px;
+        font-size: 0.9rem;
+    }
+    .slider {
+        left: 5%;
+        width: 90%;
+        height: 300px;
+    }
+    .slider .list .item .content .title {
+        font-size: 2rem;
+    }
+    .albums {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .album img {
         width: 100%;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        z-index: 1000;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        padding: 15px 0;
+        max-width: 300px;
+        height: auto;
     }
-
-    .menu li {
-        opacity: 1;
-        animation: none;
-        text-align: center;
+    .gallery p {
+        font-size: 14px;
+        padding: 0 10px;
     }
-
-    .menu li:hover:after {
-        display: none; /* Disable hover effect on mobile */
+    .desc {
+        width: 100%;
+        margin: 20px;
     }
-
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background: none;
-        border: none;
-        width: 50px;
-        height: 50px;
-    }
-
-    .menu-toggle svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .menu.active {
-        display: flex; /* Show the menu when active */
+    .desc h1 {
+        font-size: 1.5rem;
     }
 }
