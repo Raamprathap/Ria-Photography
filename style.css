@@ -1121,16 +1121,16 @@ button:disabled {
         width: 100%; /* Set all sections to full width */
     }
     .slider{
-        width: 300% !important; /* Set all sections to full width */
+        width: 100%; /* Set all sections to full width */
     }
     .gallery, .about-us, .otservices, .footer{
-        width: 320% !important; /* Set all sections to full width */
+        width: 120%; /* Set all sections to full width */
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
     }
     .album img {
-        width: 100%; /* Full width for mobile */
+        width: 40%; /* Full width for mobile */
         height: auto; /* Maintain aspect ratio */
     }
     .about-us, .otservices {
