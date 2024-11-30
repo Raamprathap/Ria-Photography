@@ -1080,6 +1080,7 @@ button:disabled {
     }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
         width: 100% !important; /* Set all sections to full width */
+        flex-wrap: wrap;
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
