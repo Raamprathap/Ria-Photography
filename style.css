@@ -1166,7 +1166,7 @@ button:disabled {
         display: none; /* Hide the menu in mobile */
     }
     *{
-        transform: scale(0.5);
+        transform: scale(1);
     }
 
 }
