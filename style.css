@@ -1165,8 +1165,4 @@ button:disabled {
     .menu {
         display: none; /* Hide the menu in mobile */
     }
-    *{
-        transform: scale(1);
-    }
-
 }
