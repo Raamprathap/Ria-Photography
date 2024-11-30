@@ -1078,6 +1078,9 @@ button:disabled {
     .nav-dropdown {
         display: block; /* Show dropdown in mobile */
     }
+    .albums{
+        flex-wrap:wrap;
+    }
     .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
         width: 100% !important; /* Set all sections to full width */
     }
