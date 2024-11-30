@@ -37,3 +37,18 @@ setInterval(() => {
         }, 50);
     }, 500);
 }, slideInterval);
+
+function toggleMenu() {
+    const popupMenu = document.getElementById('popupMenu');
+    popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+}
+
+// Optional: Close the popup if clicking outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.menu-icon')) {
+        const popupMenu = document.getElementById('popupMenu');
+        if (popupMenu.style.display === 'block') {
+            popupMenu.style.display = 'none';
+        }
+    }
+}
