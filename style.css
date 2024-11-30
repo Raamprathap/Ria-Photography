@@ -31,7 +31,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     nav {
-        gap: 20px; /* Reduced gap for mobile */
+        gap: 800px; /* Reduced gap for mobile */
         flex-wrap: wrap;
     }
     .logo-button {
@@ -450,6 +450,9 @@ nav {
 }
 
 @media screen and (max-width: 678px) {
+    .slider{
+        width: 100%;
+    }
     .slider .list .item .content {
         padding-right: 0;
     }
@@ -1066,7 +1069,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
-        gap: 20px;
+        gap: 800px;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -1075,7 +1078,7 @@ button:disabled {
     .menu {
         display: none; /* Hide the menu in mobile */
     }
- ```css
+
     .nav-dropdown {
         display: block; /* Show dropdown in mobile */
     }
