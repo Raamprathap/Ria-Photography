@@ -1040,7 +1040,7 @@ button:disabled {
     }
 }
 /* Responsive Adjustments for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1468px) {
     nav {
         gap: 20px;
         flex-wrap: wrap;
