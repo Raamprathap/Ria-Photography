@@ -1100,7 +1100,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
-        gap: 850px;
+        gap: 30px;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -1165,7 +1165,8 @@ button:disabled {
     .menu {
         display: none; /* Hide the menu in mobile */
     }
-}
-*{
-    transform: scale(0.5);
+    *{
+        transform: scale(0.5);
+    }
+
 }
