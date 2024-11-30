@@ -1085,7 +1085,7 @@ button:disabled {
         width: 100%; /* Set all sections to full width */
     }
     .slider, .gallery, .about-us, .otservices, .footer{
-        width: 250% !important; /* Set all sections to full width */
+        width: 300% !important; /* Set all sections to full width */
     }
     .albums {
         flex-direction: column; /* Change to column for mobile */
