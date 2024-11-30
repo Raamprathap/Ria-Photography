@@ -1093,8 +1093,4 @@ button:disabled {
     .menu.active {
         display: flex; /* Show the menu when active */
     }
-
-    .services{
-        flex-direction: column;
-    }
 }
