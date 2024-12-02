@@ -1223,7 +1223,7 @@ button:disabled {
         gap: 10px;
     }
     
-    .footer p {
+    .footer-text {
         font-size: 8px;
         margin: 0;
         margin-top: 100px;
