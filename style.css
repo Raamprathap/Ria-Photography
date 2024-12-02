@@ -1167,9 +1167,14 @@ button:disabled {
     .otservices, .footer{
         width: 120%; /* Set all sections to full width */
     }
-    .about-us, .about-slide, .about-slide .img-slide, .about-slide .img-slide .images{
+    .about-us, .about-slide, .about-slide .img-slide, .about-slide .img-slide .images, .about-slide .img-slide .images img{
         width: 95%;
+    }
+    .about-us .img-slide{
         margin-left: 2.5%;
+    }
+    .about-us .conten{
+        gap: 5px;
     }
     .gallery{
         width: 100%;
