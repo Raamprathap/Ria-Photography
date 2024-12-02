@@ -1218,6 +1218,13 @@ button:disabled {
         width: 95%;
         margin-left: 2.5%;
     }
+    .footer {
+        gap: 10px;
+    }
+    
+    .footer p {
+        margin: 0px;
+    }
 }
 .nav-dropdown {
     display: none; /* Hidden by default */
