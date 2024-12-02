@@ -1155,6 +1155,7 @@ button:disabled {
         font-size: 1rem !important; /* Adjust font size */
     }
     .gallery{
+        position: relative;
         margin-top: 10px;
     }
     .gallery p {
