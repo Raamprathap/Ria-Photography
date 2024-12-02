@@ -1120,6 +1120,18 @@ button:disabled {
     .wedding-gallery {
         width: 760px; /* Set all sections to full width */
     }
+    .vid {
+        width: 70%;
+        height: 500px;
+        margin: 10px;
+    }
+    
+    .desc {
+        width: 30%;
+        height: 500px;
+        margin-left: 5px;
+    }
+
     .slider, .item img, .item .content{
         width: 95%; /* Set all sections to full width */
         height: 300px;
@@ -1167,13 +1179,6 @@ button:disabled {
     .gallery p {
         font-size: 14px;
         padding: 0 10px;
-    }
-    .desc {
-        width: 100%;
-        margin: 20px;
-    }
-    .desc h1 {
-        font-size: 1.5rem;
     }
 }
 .nav-dropdown {
