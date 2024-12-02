@@ -1141,8 +1141,8 @@ button:disabled {
         padding-bottom: 0;
     }
     .desc button{
-        width: 8em;
-        font-size: 0.6rem;
+        width: 10em;
+        font-size: 0.8rem;
         margin-top: 0;
         padding-top: 0;
     }
