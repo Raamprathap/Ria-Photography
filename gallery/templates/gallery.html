@@ -695,12 +695,12 @@ nav{
         margin-top: 100px;
     }
     .gallery {
-        --s: 195px; /* control the size */
+        --s: 185px; /* control the size */
         --g: 5px;  /* control the gap */
         --f: 1.5;   /* control the scale factor */
         
         display: grid;
-        gap: var(--g);
+        gap: 0;
         width: calc(2*var(--s) + var(--g));
         aspect-ratio: 2;
         grid-template-columns: repeat(2,auto);
@@ -712,6 +712,7 @@ nav{
         height: 0;
         min-height: 100%;
         min-width: 100%;
+        margin: var(--g);
         object-fit: cover;
         cursor: pointer;
         transition: .35s linear;
