@@ -1118,11 +1118,13 @@ button:disabled {
         gap: 50px;
     }
     .wedding-gallery {
-        width: 760px; /* Set all sections to full width */
+        width: 760px;
+        border: 1px solid black;
     }
     .vid {
         width: 60%;
-        margin: 10px;
+        height: 30%;
+        margin-top: 50px;
     }
     
     .desc {
