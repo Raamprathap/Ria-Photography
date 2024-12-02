@@ -1165,10 +1165,10 @@ button:disabled {
         line-height: unset;
     }
     .otservices, .footer{
-        width: 120%; /* Set all sections to full width */
+        width: 100%;
     }
     .about-us, .about-slide, .about-slide .img-slide, .about-slide .img-slide .images, .about-slide .img-slide .images img{
-        width: 95%;
+        width: 100%;
         height: auto;
     }
     .about-slide .img-slide .images img{
@@ -1181,7 +1181,6 @@ button:disabled {
         font-size: 20px;
         margin-left: 0%;
     }
-    
     .conten p {
         font-size: 15px;
         margin-right: 0%;
@@ -1194,9 +1193,6 @@ button:disabled {
         height: auto; /* Maintain aspect ratio */
         left: 0;
         margin: 0;
-    }
-    .about-us, .otservices {
-        flex-direction: column; /* Change to column for mobile */
     }
     .footer {
         display: flex;
@@ -1211,6 +1207,16 @@ button:disabled {
     .gallery p {
         font-size: 14px;
         padding: 0 10px;
+    }
+    .otservices h1{
+        font-size:30px;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .service{
+        width: 95%;
+        margin-left: 2.5%;
     }
 }
 .nav-dropdown {
