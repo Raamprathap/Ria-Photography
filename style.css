@@ -1119,14 +1119,13 @@ button:disabled {
     }
     .wedding-gallery {
         width: 360px;
-        border: 1px solid black;
         gap: 5px;
     }
     .vid {
         width:100%;
         height: auto;
         margin: 0;
-        margin-top: 80px;
+        margin-top: 280px;
     }
     
     .desc {
@@ -1165,8 +1164,11 @@ button:disabled {
     .slider .list .item .content .type{
         line-height: unset;
     }
-    .about-us, .otservices, .footer{
+    .otservices, .footer{
         width: 120%; /* Set all sections to full width */
+    }
+    .about-us, .about-slide{
+        width: 100%;
     }
     .gallery{
         width: 100%;
