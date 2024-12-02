@@ -1136,7 +1136,9 @@ button:disabled {
     .desc h1{
         font-size: 15px;
     }
-
+    .desc button{
+        width: 6em;
+    }
     .slider, .item img, .item .content{
         width: 95%; /* Set all sections to full width */
         height: 300px;
@@ -1183,7 +1185,7 @@ button:disabled {
     }
     .gallery p {
         font-size: 14px;
-        padding: 0 0px;
+        padding: 0 10px;
     }
 }
 .nav-dropdown {
