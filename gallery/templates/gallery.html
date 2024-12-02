@@ -191,67 +191,6 @@ nav{
     background-color: #f0f0f0; /* Highlight on hover */
 }
 
-@media screen and (max-width: 768px) {
-    body{
-        overflow-x: hidden;
-    }
-    .menu {
-        display: none; /* Hide the menu in mobile */
-    }
-    nav {
-        gap: 30%;
-        flex-wrap: wrap;
-    }
-    .logo-button {
-        width: 180px;
-    }
-    .nav-dropdown {
-        display: block; /* Show dropdown in mobile */
-    }
-    .menu {
-        display: none; /* Hide the menu in mobile */
-    }
-    .footer {
-        margin-top: 150px;
-        gap: 10px;
-    }
-    .footer p{
-        margin: 0;
-    }
-    .footer-text {
-        font-size: 8px;
-        margin: 0;
-        margin-top: 100px;
-    }
-    .gallery {
-        --s: 195px; /* control the size */
-        --g: 5px;  /* control the gap */
-        --f: 1.5;   /* control the scale factor */
-        
-        display: grid;
-        gap: var(--g);
-        width: calc(2*var(--s) + var(--g));
-        aspect-ratio: 2;
-        grid-template-columns: repeat(2,auto);
-        margin-top: 100px;
-    }
-      
-    .gallery > img {
-        width: 0;
-        height: 0;
-        min-height: 100%;
-        min-width: 100%;
-        object-fit: cover;
-        cursor: pointer;
-        transition: .35s linear;
-    }
-    .gallery img:hover{
-        filter: grayscale(0);
-        width:  calc(var(--s)*var(--f));
-        height: calc(var(--s)*var(--f));
-    }
-}
-
 .menu{
     display: flex;
     gap: 55px;
@@ -721,6 +660,67 @@ nav{
     font-weight: bold;
     letter-spacing: 0.33em;
     z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    nav {
+        gap: 30%;
+        flex-wrap: wrap;
+    }
+    .logo-button {
+        width: 180px;
+    }
+    .nav-dropdown {
+        display: block; /* Show dropdown in mobile */
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    .footer {
+        margin-top: 150px;
+        gap: 10px;
+    }
+    .footer p{
+        margin: 0;
+    }
+    .footer-text {
+        font-size: 8px;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .gallery {
+        --s: 195px; /* control the size */
+        --g: 5px;  /* control the gap */
+        --f: 1.5;   /* control the scale factor */
+        
+        display: grid;
+        gap: var(--g);
+        width: calc(2*var(--s) + var(--g));
+        aspect-ratio: 2;
+        grid-template-columns: repeat(2,auto);
+        margin-top: 100px;
+    }
+      
+    .gallery > img {
+        width: 0;
+        height: 0;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: .35s linear;
+    }
+    .gallery img:hover{
+        filter: grayscale(0);
+        width:  calc(var(--s)*var(--f));
+        height: calc(var(--s)*var(--f));
+    }
 }
 
     </style>
