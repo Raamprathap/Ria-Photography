@@ -1167,8 +1167,9 @@ button:disabled {
     .otservices, .footer{
         width: 120%; /* Set all sections to full width */
     }
-    .about-us, .about-slide{
-        width: 100%;
+    .about-us, .about-slide, .about-slide .img-slide, .about-slide .img-slide .images{
+        width: 95%;
+        margin-left: 2.5%;
     }
     .gallery{
         width: 100%;
