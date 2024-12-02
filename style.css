@@ -1123,7 +1123,7 @@ button:disabled {
         gap: 5px;
     }
     .vid {
-        width: 70%;
+        width:100%;
         height: auto;
         margin: 0;
         margin-top: 80px;
