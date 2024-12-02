@@ -1121,15 +1121,15 @@ button:disabled {
         width: 760px; /* Set all sections to full width */
     }
     .vid {
-        width: 70%;
-        height: 500px;
+        width: 60%;
         margin: 10px;
     }
     
     .desc {
-        width: 30%;
-        height: 500px;
-        margin-left: 5px;
+        width: 40%;
+    }
+    .desc h1{
+        font-size: 15px;
     }
 
     .slider, .item img, .item .content{
