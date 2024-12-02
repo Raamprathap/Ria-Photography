@@ -1219,10 +1219,12 @@ button:disabled {
         margin-left: 2.5%;
     }
     .footer {
+        margin-top: 200px;
         gap: 10px;
     }
     
     .footer p {
+        font-size: 8px;
         margin: 0px;
     }
 }
