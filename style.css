@@ -1183,7 +1183,7 @@ button:disabled {
     }
     .gallery p {
         font-size: 14px;
-        padding: 0 10px;
+        padding: 0 0px;
     }
 }
 .nav-dropdown {
