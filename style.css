@@ -1222,7 +1222,9 @@ button:disabled {
         margin-top: 150px;
         gap: 10px;
     }
-    
+    .footer p{
+        margin: 0;
+    }
     .footer-text {
         font-size: 8px;
         margin: 0;
