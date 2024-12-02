@@ -29,7 +29,7 @@ nav{
     width: 100%;
     height: 80px;
     display: flex;
-    gap: 650px;
+    gap: 42%;
     z-index: 2;
     align-items: center;
     background-color: #FFFFFFB3;
@@ -624,6 +624,69 @@ nav{
     z-index: 3;
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    nav {
+        gap: 30%;
+        flex-wrap: wrap;
+    }
+    .logo-button {
+        width: 180px;
+    }
+    .nav-dropdown {
+        display: block; /* Show dropdown in mobile */
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    .footer {
+        margin-top: 150px;
+        gap: 10px;
+    }
+    .footer p{
+        margin: 0;
+        margin-left: 5px;
+    }
+    .footer-text {
+        font-size: 8px;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .gallery {
+        --s: 175px; /* control the size */
+        --g: 5px;  /* control the gap */
+        --f: 1.5;   /* control the scale factor */
+        
+        display: grid;
+        gap: var(--g);
+        width: calc(2*var(--s) + var(--g));
+        aspect-ratio: 1.85;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(auto-fill, 165px);
+        margin-top: 100px;
+    }
+      
+    .gallery > img {
+        width: 0;
+        height: 145px;
+        min-width: 100%;
+        margin: var(--g);
+        object-fit: cover;
+        cursor: pointer;
+        transition: .35s linear;
+    }
+    .gallery img:hover{
+        filter: grayscale(0);
+        width:  calc(var(--s)*var(--f));
+        height: calc(var(--s)*var(--f));
+    }
+}
+
     </style>
 </head>
 <body>
@@ -636,6 +699,20 @@ nav{
             </div>
             </a>
         </div>
+
+        <div class="nav-dropdown">
+            <svg class="menu-icon" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <div class="popup-menu" id="popupMenu">
+                <ul>
+                     <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
+                    <li style="--i:2" onclick="window.location.href='../../gallery/templates/gallery.html'">Gallery</li>
+                    <li style="--i:3" onclick="window.location.href='video.html'">Films</li>
+                    <li style="--i:4" onclick="window.location.href='../../About/About.html'">About</li>
+                    <li onclick="window.location.href='../../Book/bookus.html'">Book Us</li>
+                </ul>
+            </div>
+        </div>
+        
         <ol class="menu">
             <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
             <li style="--i:2" onclick="window.location.href='../../gallery/templates/gallery.html'">Gallery</li>
@@ -933,6 +1010,20 @@ nav{
             });
         })
         .catch(error => console.error('Error fetching images:', error));
+        function toggleMenu() {
+            const popupMenu = document.getElementById('popupMenu');
+            popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        // Optional: Close the popup if clicking outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                const popupMenu = document.getElementById('popupMenu');
+                if (popupMenu.style.display === 'block') {
+                    popupMenu.style.display = 'none';
+                }
+            }
+        }
     </script>
 </body>
 </html>
