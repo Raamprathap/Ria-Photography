@@ -1100,7 +1100,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     body{
-        width: 768px;
+        overflow: hidden;
     }
     nav {
         gap: 120px;
