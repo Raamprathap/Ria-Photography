@@ -1104,7 +1104,7 @@ button:disabled {
         overflow-x: hidden;
     }
     nav {
-        gap: 20%;
+        gap: 30%;
         flex-wrap: wrap;
     }
     .logo-button {
