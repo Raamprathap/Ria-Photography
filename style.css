@@ -1136,8 +1136,15 @@ button:disabled {
     .desc h1{
         font-size: 15px;
     }
+    .desc p{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .desc button{
         width: 6em;
+        font-size: 0.6rem;
+        margin-top: 0;
+        padding-top: 0;
     }
     .slider, .item img, .item .content{
         width: 95%; /* Set all sections to full width */
