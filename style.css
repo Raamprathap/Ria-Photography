@@ -1121,7 +1121,7 @@ button:disabled {
         width: 100%; /* Set all sections to full width */
     }
     .slider, .item img, .item .content{
-        width: 100%; /* Set all sections to full width */
+        width: 95%; /* Set all sections to full width */
         height: 300px;
     }
     .item{
@@ -1156,7 +1156,7 @@ button:disabled {
     }
     .gallery{
         position: relative;
-        margin-top: 10px;
+        margin-top: 150px;
     }
     .gallery p {
         font-size: 14px;
