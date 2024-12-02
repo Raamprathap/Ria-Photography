@@ -1120,10 +1120,11 @@ button:disabled {
     .wedding-gallery {
         width: 360px;
         border: 1px solid black;
+        gap: 5px;
     }
     .vid {
-        width: 60%;
-        height: 30%;
+        width: 70%;
+        height: auto;
         margin: 0;
         margin-top: 80px;
     }
