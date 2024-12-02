@@ -31,7 +31,7 @@ nav {
 
 .nav-dropdown {
     position: relative;
-    left: -1%;
+    left: -5%;
 }
 
 .menu-icon {
@@ -1242,7 +1242,6 @@ button:disabled {
 @media screen and (max-width: 768px) {
     .nav-dropdown {
         display: block; /* Show dropdown in mobile */
-        margin-right: 1%;
     }
     .menu {
         display: none; /* Hide the menu in mobile */
