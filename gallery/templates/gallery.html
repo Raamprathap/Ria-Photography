@@ -700,11 +700,12 @@ nav{
         --f: 1.5;   /* control the scale factor */
         
         display: grid;
-        gap: 0;
+        gap: var(--g);
         width: calc(2*var(--s) + var(--g));
         aspect-ratio: 1.85;
         grid-template-columns: repeat(2,auto);
         margin-top: 100px;
+        padding: 1px
     }
       
     .gallery > img {
