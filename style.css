@@ -1100,7 +1100,7 @@ button:disabled {
 /* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
     nav {
-        gap: 100px;
+        gap: 120px;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -1117,8 +1117,8 @@ button:disabled {
         flex-wrap: wrap;
         gap: 50px;
     }
-    .slider, .albums, .about-us, .otservices, .footer, .wedding-gallery {
-        width: 100%; /* Set all sections to full width */
+    .wedding-gallery {
+        width: 760px; /* Set all sections to full width */
     }
     .slider, .item img, .item .content{
         width: 95%; /* Set all sections to full width */
@@ -1139,8 +1139,11 @@ button:disabled {
     .slider .list .item .content .type{
         line-height: unset;
     }
-    .gallery, .about-us, .otservices, .footer{
+    .about-us, .otservices, .footer{
         width: 120%; /* Set all sections to full width */
+    }
+    .gallery{
+        width: 100%;
     }
     .album img {
         width: 100%; /* Full width for mobile */
