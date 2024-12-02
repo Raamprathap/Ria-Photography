@@ -1154,6 +1154,9 @@ button:disabled {
     .slider .list .item .content .title {
         font-size: 1rem !important; /* Adjust font size */
     }
+    .gallery{
+        margin-top: 10px;
+    }
     .gallery p {
         font-size: 14px;
         padding: 0 10px;
