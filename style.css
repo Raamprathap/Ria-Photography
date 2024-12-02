@@ -31,7 +31,6 @@ nav {
 
 .nav-dropdown {
     position: relative;
-    left: -5%;
 }
 
 .menu-icon {
@@ -43,6 +42,7 @@ nav {
 .popup-menu {
     display: none; /* Hide by default */
     position: absolute;
+    left: -1%;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
