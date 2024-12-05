@@ -721,6 +721,7 @@ nav{
     body{
         overflow-x: hidden;
         width: 100%;
+        background-position: unset;
     }
     .menu {
         display: none; /* Hide the menu in mobile */
@@ -751,7 +752,7 @@ nav{
         margin: 0;
         margin-top: 100px;
     }
-    .booking{
+    .booking, .form{
         flex-direction: column;
     }
 }
