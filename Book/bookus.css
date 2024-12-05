@@ -720,12 +720,13 @@ nav{
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
+        width: 100%;
     }
     .menu {
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 10%;
+        gap: 15%;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -749,5 +750,8 @@ nav{
         font-size: 8px;
         margin: 0;
         margin-top: 100px;
+    }
+    .booking{
+        flex-wrap: wrap;
     }
 }
