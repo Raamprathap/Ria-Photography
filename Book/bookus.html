@@ -16,6 +16,20 @@
             </div>
             </a>
         </div>
+
+        <div class="nav-dropdown">
+            <svg class="menu-icon" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <div class="popup-menu" id="popupMenu">
+                <ul>
+                     <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
+                    <li style="--i:2" onclick="window.location.href='../gallery/templates/gallery.html'">Gallery</li>
+                    <li style="--i:3" onclick="window.location.href='../Films/templates/video.html'">Films</li>
+                    <li style="--i:4" onclick="window.location.href='../About/About.html'">About</li>
+                    <li onclick="window.location.href='bookus.html'">Book Us</li>
+                </ul>
+            </div>
+        </div>
+
         <ol class="menu">
             <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
             <li style="--i:2" onclick="window.location.href='../gallery/templates/gallery.html'">Gallery</li>
@@ -408,6 +422,21 @@
                 appendToSpreadsheet(); // Call to append data directly if already authenticated
             }
         });
+
+        function toggleMenu() {
+            const popupMenu = document.getElementById('popupMenu');
+            popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        // Optional: Close the popup if clicking outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                const popupMenu = document.getElementById('popupMenu');
+                if (popupMenu.style.display === 'block') {
+                    popupMenu.style.display = 'none';
+                }
+            }
+        }
     </script>
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
