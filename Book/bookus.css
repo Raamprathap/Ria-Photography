@@ -720,7 +720,6 @@ nav{
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
-        width: 100%;
         background-position: unset;
     }
     .menu {
@@ -752,7 +751,7 @@ nav{
         margin: 0;
         margin-top: 100px;
     }
-    .booking, .form{
-        flex-direction: column;
+    .booking{
+        margin-left: 50%;
     }
 }
