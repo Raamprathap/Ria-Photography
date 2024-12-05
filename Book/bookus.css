@@ -726,7 +726,7 @@ nav{
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 13%;
+        gap: 10%;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -752,10 +752,20 @@ nav{
         margin-top: 100px;
     }
     .booking{
-        margin-left: 50%;
+        margin-left: 40%;
         flex-direction: column;
     }
     .form{
         flex-direction: column;
+    }
+    .content{
+        margin-top: 20%;
+    }
+    .content h2{
+        font-size: 1rem;
+    }
+    .booking-section {
+        max-width: 47vh;
+        max-height: 150vh;
     }
 }
