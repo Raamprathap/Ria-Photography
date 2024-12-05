@@ -762,10 +762,17 @@ nav{
         margin-top: 20%;
     }
     .content h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        left: 10vh;
     }
     .booking-section {
+        top: 1.5vh;
         max-width: 47vh;
         max-height: 150vh;
+    }
+    .booking-section input,
+    .booking-section select,
+    .booking-section textarea {
+        width: 25vh;
     }
 }
