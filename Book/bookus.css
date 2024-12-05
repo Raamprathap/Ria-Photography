@@ -726,7 +726,7 @@ nav{
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 15%;
+        gap: 13%;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -752,6 +752,6 @@ nav{
         margin-top: 100px;
     }
     .booking{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
