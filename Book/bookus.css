@@ -753,5 +753,9 @@ nav{
     }
     .booking{
         margin-left: 50%;
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
     }
 }
