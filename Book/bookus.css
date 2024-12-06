@@ -718,7 +718,7 @@ nav{
 
 @media screen and (max-width: 768px) {
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         background-position: unset;
     }
     .menu {
@@ -744,7 +744,7 @@ nav{
     }
     .footer p{
         margin: 0;
-        margin-left: 25px;
+        margin-left: 45px;
     }
     .footer-text {
         font-size: 5px;
@@ -763,7 +763,7 @@ nav{
     }
     .content h2{
         font-size: 1.5rem;
-        left: 2vh;
+        left: 4vh;
     }
     .booking-section {
         top: 1.5vh;
