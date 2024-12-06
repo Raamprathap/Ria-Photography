@@ -744,10 +744,10 @@ nav{
     }
     .footer p{
         margin: 0;
-        margin-left: 5px;
+        margin-left: 25px;
     }
     .footer-text {
-        font-size: 8px;
+        font-size: 5px;
         margin: 0;
         margin-top: 100px;
     }
@@ -763,7 +763,7 @@ nav{
     }
     .content h2{
         font-size: 1.5rem;
-        left: 5vh;
+        left: 2vh;
     }
     .booking-section {
         top: 1.5vh;
