@@ -741,7 +741,7 @@ nav{
     .footer {
         margin-top: 150px;
         gap: 10px;
-        width: 70%;
+        width: 75%;
     }
     .footer p{
         margin: 0;
@@ -753,7 +753,7 @@ nav{
         margin-top: 100px;
     }
     .booking{
-        margin-left: 20%;
+        margin-left: 25%;
         flex-direction: column;
     }
     .form{
