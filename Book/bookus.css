@@ -719,7 +719,6 @@ nav{
 
 @media screen and (max-width: 768px) {
     body{
-        max-width: 370px;
         overflow-x: hidden;
         background-position: unset;
     }
@@ -742,6 +741,7 @@ nav{
     .footer {
         margin-top: 150px;
         gap: 10px;
+        width: 100%;
     }
     .footer p{
         margin: 0;
