@@ -746,12 +746,13 @@ nav{
         margin: 0;
     }
     .footer-text {
-        font-size: 10px;
+        font-size: 15px;
+        width: 100%;
         margin: 0;
         margin-top: 100px;
     }
     .booking{
-        margin-left: 42%;
+        margin-left: 44%;
         flex-direction: column;
     }
     .form{
