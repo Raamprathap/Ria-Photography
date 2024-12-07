@@ -751,14 +751,14 @@ nav{
         margin-top: 100px;
     }
     .booking{
-        margin-left: 38%;
+        margin-left: 45%;
         flex-direction: column;
     }
     .form{
         flex-direction: column;
     }
     .content{
-        margin-top: 20%;
+        margin-top: 5%;
     }
     .content h2{
         font-size: 1.5rem;
