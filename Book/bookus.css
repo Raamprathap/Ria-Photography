@@ -720,6 +720,7 @@ nav{
     body{
         overflow-x: hidden !important;
         max-width: 400px;
+        margin: 0;
     }
     .menu {
         display: none; /* Hide the menu in mobile */
