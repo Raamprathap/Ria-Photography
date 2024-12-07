@@ -408,11 +408,11 @@ nav{
     gap: 500px;
 }
 
-.footer p{
+.footer-text{
     font-size: 16px;
     margin: 100px;
 }
-.footer p span{
+.footer-text span{
     color: #0251ad;
     font-weight: 300;
 }
@@ -742,9 +742,6 @@ nav{
         gap: 10px;
         width: 76%;
     }
-    .footer p{
-        margin: 0;
-    }
     .footer-text {
         font-size: 5px;
         margin: 0;
@@ -769,7 +766,7 @@ nav{
         top: 0.5vh;
         max-width: 42vh;
         max-height: 150vh;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .booking-section input,
     .booking-section select,
