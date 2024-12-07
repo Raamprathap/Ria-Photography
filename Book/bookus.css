@@ -745,7 +745,7 @@ nav{
     .footer p{
         margin: 0;
     }
-    .footer-text {
+    .footer .footer-text {
         font-size: 15px;
         margin: 0;
         margin-top: 100px;
