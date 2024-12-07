@@ -740,7 +740,9 @@ nav{
     .footer {
         margin-top: 150px;
         gap: 10px;
-        width: 76%;
+    }
+    .footer p{
+        margin: 0;
     }
     .footer-text {
         font-size: 8px;
