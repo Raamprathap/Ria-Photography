@@ -719,7 +719,7 @@ nav{
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden !important;
-        background-position: unset;
+        max-width: 400px;
     }
     .menu {
         display: none; /* Hide the menu in mobile */
