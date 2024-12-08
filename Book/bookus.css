@@ -726,7 +726,7 @@ nav{
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 14%;
+        gap: 15%;
         flex-wrap: wrap;
     }
     .logo-button {
@@ -749,13 +749,13 @@ nav{
     .footer .footer-text {
         font-size: 15px;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 10px;
         margin-left: 180px;
         width: 180px
     }
     .footer .main{
         position: absolute;
-        left: 200px;
+        left: 180px;
     }
     .booking{
         margin-left: 28%;
