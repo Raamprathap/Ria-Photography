@@ -727,10 +727,6 @@ nav{
         width:  calc(var(--s)*var(--f));
         height: calc(var(--s)*var(--f));
     }
-    .grayscale {
-        filter: grayscale(80%);
-        transition: filter 0.3s ease; /* Smooth transition */
-    }
 }
 
     </style>
@@ -1036,7 +1032,7 @@ nav{
             });
         
             // Select all image elements for grayscale effect
-            const images = document.querySelectorAll('.gallery img');
+            const images = document.querySelectorAll('.gallery .vid');
         
             // Add event listeners to each image
             images.forEach((image) => {
