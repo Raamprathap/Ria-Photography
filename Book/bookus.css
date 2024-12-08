@@ -753,6 +753,9 @@ nav{
         margin-left: 180px;
         width: 180px
     }
+    .footer .main{
+        position: absolute;
+    }
     .booking{
         margin-left: 28%;
         flex-direction: column;
