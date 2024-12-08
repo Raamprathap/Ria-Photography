@@ -729,7 +729,7 @@ nav{
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 32%;
+        gap: 31.8%;
         flex-wrap: wrap;
     }
     .logo-button {
