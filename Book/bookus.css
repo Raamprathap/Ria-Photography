@@ -755,6 +755,7 @@ nav{
     }
     .footer .main{
         position: absolute;
+        left: 200px;
     }
     .booking{
         margin-left: 28%;
