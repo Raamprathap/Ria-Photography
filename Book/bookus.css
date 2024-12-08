@@ -726,7 +726,7 @@ nav{
         display: none; /* Hide the menu in mobile */
     }
     nav {
-        gap: 13%;
+        gap: 14%;
         flex-wrap: wrap;
     }
     .logo-button {
