@@ -702,9 +702,9 @@ nav{
         
         display: grid;
         gap: var(--g);
-        width: calc(2*var(--s) + var(--g));
+        width: calc(1*var(--s) + var(--g));
         aspect-ratio: 1.85;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(auto-fill, 165px);
         margin-top: 100px;
     }
@@ -738,7 +738,7 @@ nav{
             </a>
         </div>
 
-        <div class="nav-dropdown">
+        <div class="nav-dropdown" onclick="toggleMenu()">
             <svg class="menu-icon" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             <div class="popup-menu" id="popupMenu">
                 <ul>
