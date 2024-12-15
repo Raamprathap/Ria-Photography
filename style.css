@@ -514,17 +514,23 @@ nav {
     cursor: pointer;
     opacity: 0;
     transition: all .5s ease;
-    animation: slideUP .5s ease forwards;
+    animation: slideUP ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     animation-delay: calc(.2s * var(--i));
 }
 
 .album.leftalb {
-    animation: slideRight .5s ease;
+    animation: slideRight ease;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     animation-delay: calc(.2s * var(--i));
 }
 
 .album.rightalb {
-    animation: slideLeft .5s ease;
+    animation: slideLeft ease;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
     animation-delay: calc(.2s * var(--i));
 }
 
