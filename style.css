@@ -516,21 +516,21 @@ nav {
     transition: all .5s ease;
     animation: slideUP ease forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 60%;
     animation-delay: calc(.2s * var(--i));
 }
 
 .album.leftalb {
     animation: slideRight ease;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 60%;
     animation-delay: calc(.2s * var(--i));
 }
 
 .album.rightalb {
     animation: slideLeft ease;
     animation-timeline: view();
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 60%;
     animation-delay: calc(.2s * var(--i));
 }
 
@@ -543,9 +543,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items : center;
+    align-items: center;
     background-color: #f4f4f4;
     padding: 20px;
+    transition: all .5s ease;
+    animation: slideUP ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
 }
 
 .gallery p {
