@@ -514,7 +514,7 @@ nav {
     cursor: pointer;
     opacity: 0;
     transition: all .5s ease;
-    animation: slideUP ease forwards;
+    animation: slideUPa ease forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 60%;
     animation-delay: calc(.2s * var(--i));
@@ -547,7 +547,7 @@ nav {
     background-color: #f4f4f4;
     padding: 20px;
     transition: all .5s ease;
-    animation: slideUP ease forwards;
+    animation: slideUPa ease forwards;
     animation-timeline: view();
     animation-range: entry 0 cover 60%;
 }
@@ -565,6 +565,10 @@ nav {
     height: 650px;
     display: flex;
     margin-bottom: 30px;
+    transition: all .5s ease;
+    animation: slideUPa ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
 }
 
 .vid {
@@ -632,6 +636,10 @@ button:disabled {
     display: flex;
     flex-direction: column;
     background-color: #f4f4f4;
+    transition: all .5s ease;
+    animation: slideUPa ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
 }
 
 .about-us .conten {
@@ -685,6 +693,10 @@ button:disabled {
 .otservices {
     display: flex;
     flex-direction: column;
+    transition: all .5s ease;
+    animation: slideUPa ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
 }
 
 .otservices h1 {
@@ -1073,6 +1085,18 @@ button:disabled {
 }  
 
 @keyframes slideUP {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUPa {
     0% {
         transform: translateY(150px);
         opacity: 0;
