@@ -10,14 +10,12 @@
 
 body{
     margin: 0;
-    min-height: 100vh;
     display: grid;
     place-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/img3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    width: 100%;
 }
 
 nav{
@@ -25,7 +23,7 @@ nav{
     width: 100%;
     height: 80px;
     display: flex;
-    gap: 650px;
+    gap: 40%;
     z-index: 2;
     align-items: center;
     background-color: #FFFFFFB3;
@@ -146,7 +144,46 @@ nav{
 .logo-button:hover::after {
     right: 16px;
 }
-  
+
+.nav-dropdown {
+    display: none; /* Hidden by default */
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.menu-icon {
+    cursor: pointer;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+}
+
+.popup-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    right: 10%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 5px; /* Space between icon and menu */
+}
+
+.popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.popup-menu li:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
 
 .menu{
     display: flex;
@@ -371,11 +408,11 @@ nav{
     gap: 500px;
 }
 
-.footer p{
+.footer-text{
     font-size: 16px;
     margin: 100px;
 }
-.footer p span{
+.footer-text span{
     color: #0251ad;
     font-weight: 300;
 }
@@ -677,4 +714,75 @@ nav{
     font-weight: bold;
     letter-spacing: 0.33em;
     z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden !important;
+        max-width: 400px;
+        margin: 0;
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    nav {
+        gap: 31.8%;
+        flex-wrap: wrap;
+    }
+    .logo-button {
+        width: 180px;
+    }
+    .nav-dropdown {
+        display: block; /* Show dropdown in mobile */
+    }
+    .menu {
+        display: none; /* Hide the menu in mobile */
+    }
+    .footer {
+        margin-top: 150px;
+        gap: 0px;
+        width: auto;
+    }
+    .footer p{
+        margin: 0;
+    }
+    .footer .footer-text {
+        font-size: 15px;
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 160px;
+        width: 170px
+    }
+    .footer .main{
+        position: absolute;
+        left: 135px;
+    }
+    .booking{
+        margin-left: 28%;
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .content{
+        margin-top: 20%;
+    }
+    .content h2{
+        font-size: 1.5rem;
+        left: 4vh;
+    }
+    .booking-section {
+        top: 0.5vh;
+        max-width: 42vh;
+        max-height: 150vh;
+        margin-top: 20px;
+    }
+    .booking-section input,
+    .booking-section select,
+    .booking-section textarea {
+        width: 25vh;
+    }
 }

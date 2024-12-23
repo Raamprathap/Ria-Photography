@@ -705,7 +705,8 @@ nav{
         width: calc(2*var(--s) + var(--g));
         aspect-ratio: 1.85;
         grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(auto-fill, 165px);
+        grid-auto-rows: min-content;
+/*         grid-template-rows: repeat(auto-fill, 165px); */
         margin-top: 100px;
     }
       
@@ -738,8 +739,8 @@ nav{
             </a>
         </div>
 
-        <div class="nav-dropdown">
-            <svg class="menu-icon" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <div class="nav-dropdown" onclick="toggleMenu()">
+            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             <div class="popup-menu" id="popupMenu">
                 <ul>
                      <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
@@ -775,7 +776,7 @@ nav{
     <div class="gallery"></div>
 
     <div class="footer">
-        <p class="footer-text">© Ria Photography 2024, Coimbatore, India<br>
+        <p class="footer-text"><span style='cursor:pointer;' onclick="window.location.href='../../privacy-policy.html'">© Ria Photography</span> 2024, Coimbatore, India<br>
             <span>Powered by Ria Photography</span></p>
         <div class="main">
             <div class="card">

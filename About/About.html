@@ -16,11 +16,25 @@
             </div>
             </a>
         </div>
+
+        <div class="nav-dropdown" onclick="toggleMenu()">
+            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <div class="popup-menu" id="popupMenu">
+                <ul>
+                    <li onclick="window.location.href='../../index.html'">Home</li>
+                    <li onclick="window.location.href='../gallery/templates/gallery.html'">Gallery</li>
+                    <li onclick="window.location.href='../../Films/templates/video.html'">Films</li>
+                    <li onclick="window.location.href='About.html'">About</li>
+                    <li onclick="window.location.href='../../Book/bookus.html'">Book Us</li>
+                </ul>
+            </div>
+        </div>
+        
         <ol class="menu">
             <li style="--i:1" onclick="window.location.href='../../index.html'">Home</li>
             <li style="--i:2" onclick="window.location.href='../gallery/templates/gallery.html'">Gallery</li>
             <li style="--i:3" onclick="window.location.href='../../Films/templates/video.html'">Films</li>
-            <li style="--i:4" onclick="window.location.href='about.html'">About</li>
+            <li style="--i:4" onclick="window.location.href='About.html'">About</li>
             <button type="submit" class="custom-button" style="--i:5" onclick="window.location.href='../../Book/bookus.html'">
                 Book Us
                 <svg
@@ -46,24 +60,24 @@
         <h2>Our Team</h2>
         <div class="team-container">
             <div class="team-member">
-                <img src="image/img2.jpg" alt="Team Member 1">
+                <img src="image/Team_Member1.jpg" alt="Team Member 1">
                 <div class="member-info">
-                    <h3>John Doe</h3>
-                    <p>Photographer</p>
+                    <h3>Anu</h3>
+                    <p>Owner</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="image/img2.jpg" alt="Team Member 2">
+                <img src="image/Team_Member2.jpg" alt="Team Member 2">
                 <div class="member-info">
-                    <h3>Jane Smith</h3>
-                    <p>Assistant Photographer</p>
+                    <h3>Rammoorthy</h3>
+                    <p>Photographer</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <p class="footer-text">© Ria Photography 2024, Coimbatore, India<br>
+        <p class="footer-text"><span style='cursor:pointer;' onclick="window.location.href='../../privacy-policy.html'">© Ria Photography</span> 2024, Coimbatore, India<br>
             <span>Powered by Ria Photography</span></p>
         <div class="main">
             <div class="card">
@@ -294,5 +308,21 @@
         </div>
 
     </div>
+    <script>
+        function toggleMenu() {
+            const popupMenu = document.getElementById('popupMenu');
+            popupMenu.style.display = popupMenu.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        // Optional: Close the popup if clicking outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                const popupMenu = document.getElementById('popupMenu');
+                if (popupMenu.style.display === 'block') {
+                    popupMenu.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>
