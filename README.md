@@ -1,110 +1,89 @@
-# 📸 **RIA Photography - Studio Website**
+# 📸 RIA Photography - Studio Website
 
-Welcome to **RIA Photography**, a professional studio website designed to showcase breathtaking photos and provide seamless online booking for clients. The platform enables users to explore the studio's work and book sessions effortlessly, with their details securely stored in a **Google Sheet** for easy access by the studio owners.
+Welcome to **RIA Photography**, a professional studio website showcasing stunning photography and films. The website allows users to explore the studio's portfolio and book appointments seamlessly. 📷✨
 
-🌍 **Live Website**: [RIA Photography](https://ria-photography.onrender.com)
-
----
-
-## 🎯 **Key Features**
-
-✅ **Elegant Photo Gallery** – Showcasing high-quality studio work 📷  
-✅ **Seamless Online Booking** – Users can schedule sessions effortlessly 📅  
-✅ **Google Sheets Integration** – Booking details are automatically stored for studio access 📊  
-✅ **Films & Videography** – Dedicated section for cinematic projects 🎬  
-✅ **Privacy Policy Page** – Ensuring transparency & data protection 🔒  
-✅ **Responsive Design** – Fully optimized for all devices 📱💻  
+🔗 **Live Website:** [RIA Photography](https://ria-photography.onrender.com)
 
 ---
 
-## 📂 **Project Structure**
+## 🌟 Features
+
+✅ **Photo Gallery** – Browse high-quality images captured by the studio.  
+✅ **Film Showcase** – Watch professional video content.  
+✅ **Booking Page** – Users can book a session, and details are saved to a Google Sheet accessible to studio owners.  
+✅ **Responsive Design** – Optimized for all devices.  
+✅ **Flask Integration** – Backend support for films and gallery sections.
+
+---
+
+## 📂 Project Structure
 
 ```
-ria-photography/
-├── index.html                 # Homepage
-├── privacy-policy.html        # Privacy policy page
-├── script.js                  # JavaScript for interactivity
-├── style.css                  # Global styling
-├── About/                     # About page section
-│   ├── About.html             # About us page
-│   ├── about.css              # Styling for About page
-│   └── image/                 # Images related to About page
-├── Book/                      # Booking page section
-│   ├── bookus.html            # Booking form
-│   ├── bookus.css             # Styling for booking page
-│   └── image/                 # Images for booking page
-├── Films/                     # Films & videography section
-│   ├── app.py                 # Backend for handling video content
-│   ├── requirements.txt       # Dependencies
-│   ├── image/                 # Images for films section
+raamprathap-ria-photography/
+├── README.md
+├── index.html
+├── privacy-policy.html
+├── script.js
+├── style.css
+├── About/
+│   ├── About.html
+│   ├── about.css
+│   └── image/
+├── Book/
+│   ├── bookus.css
+│   ├── bookus.html
+│   └── image/
+├── Films/
+│   ├── app.py
+│   ├── image/
 │   ├── static/
-│   │   └── video.css          # Video styling
+│   │   └── video.css
 │   └── templates/
-│       └── video.html         # Video showcase page
-├── gallery/                   # Photo gallery section
-│   ├── app.py                 # Backend for gallery
-│   ├── requirements.txt       # Dependencies
-│   ├── image/                 # Images for gallery
+│       └── video.html
+├── gallery/
+│   ├── app.py
+│   ├── image/
 │   ├── static/
-│   │   └── gallery.css        # Gallery styling
+│   │   └── gallery.css
 │   └── templates/
-│       └── gallery.html       # Gallery showcase page
-└── home_img/                  # Homepage images
+│       └── gallery.html
+└── home_img/
 ```
 
 ---
 
-## 🚀 **Getting Started**
+## 🚀 Getting Started
 
-### **🔹 Clone the Repository**
+### 1️⃣ Clone the Repository
 ```bash
- git clone https://github.com/yourusername/raamprathap-ria-photography.git
+ git clone https://github.com/your-username/raamprathap-ria-photography.git
  cd raamprathap-ria-photography
 ```
 
-### **🔹 Run the Website Locally**
-Simply open `index.html` in your browser to explore the website.
+### 2️⃣ Install Dependencies (For Flask Apps in Films & Gallery Sections)
+```bash
+ pip install flask flask-cors
+```
 
-#### **For Backend (Films & Gallery Sections)**
-1. Navigate into the respective folder (`Films/` or `gallery/`).
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Flask app:
-   ```bash
-   python app.py
-   ```
-4. The backend will run on `http://127.0.0.1:5000/`
+### 3️⃣ Run the Flask Apps
+Navigate to **Films/** and **gallery/** folders separately and start the servers:
+```bash
+ python app.py
+```
+The backend will run on **localhost:5000** by default.
 
 ---
 
-## 🛠 **Technologies Used**
-
-- **Frontend:** HTML5, CSS3, JavaScript (ES6)
-- **Backend:** Python (Flask)
-- **Database:** Google Sheets (for booking details)
-- **Hosting:** Render
+## 📜 License
+This project is licensed under the **ISC License**.
 
 ---
 
-## 🤝 **Contributing**
-
-We welcome contributions! If you want to improve this project:
-1. Fork the repository 🍴
-2. Create a new branch 🔀
-3. Make your changes ✏️
-4. Submit a pull request 📬
+## 📞 Contact
+👤 **Raam Prathap**  
+📧 Email: [raamprathap17242@gmail.com](mailto:raamprathap17242@gmail.com)  
+🔗 GitHub: [Raam Prathap](https://github.com/Raamprathap)  
 
 ---
 
-## 📞 **Contact**
-
-- 👤 **Raam Prathap**  
-  📧 Email: [raamprathap17242@gmail.com](mailto:raamprathap17242@gmail.com)  
-  🔗 GitHub: [Raam Prathap](https://github.com/Raamprathap)  
-
----
-
-🚀 *RIA Photography – Capturing Moments, Creating Memories!* 🎥📸
-
+🚀 *Enjoy the immersive experience of RIA Photography!* 📷
