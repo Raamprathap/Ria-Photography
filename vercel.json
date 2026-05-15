@@ -1,32 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "echo 'Static files ready'",
-  "builds": [
-    {
-      "src": "Films/app.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "gallery/app.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/films/.*",
-      "dest": "Films/app.py"
-    },
-    {
-      "src": "/gallery/.*",
-      "dest": "gallery/app.py"
-    },
-    {
-      "src": "/(.*)\\.(css|js|json|jpg|jpeg|png|gif|ico|svg|webp|woff|woff2)$",
-      "dest": "/$1.$2"
-    },
-    {
-      "src": "/.*",
-      "dest": "index.html"
-    }
-  ]
+  "public": true
 }
