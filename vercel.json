@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "echo 'Static files ready'",
   "builds": [
     {
       "src": "Films/app.py",
@@ -8,31 +9,23 @@
     {
       "src": "gallery/app.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "About/About.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Book/bookus.html",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/films/(.*)",
+      "src": "/films/.*",
       "dest": "Films/app.py"
     },
     {
-      "src": "/gallery/(.*)",
+      "src": "/gallery/.*",
       "dest": "gallery/app.py"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*)\\.(css|js|json|jpg|jpeg|png|gif|ico|svg|webp|woff|woff2)$",
+      "dest": "/$1.$2"
+    },
+    {
+      "src": "/.*",
       "dest": "index.html"
     }
   ]
