@@ -1,0 +1,6 @@
+Films/
+gallery/
+requirements.txt
+*.py
+.git/
+node_modules/
