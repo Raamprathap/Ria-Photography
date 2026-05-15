@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Films/app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "gallery/app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "About/About.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Book/bookus.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/films/(.*)",
+      "dest": "Films/app.py"
+    },
+    {
+      "src": "/gallery/(.*)",
+      "dest": "gallery/app.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ]
+}
